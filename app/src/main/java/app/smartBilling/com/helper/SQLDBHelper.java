@@ -19,6 +19,7 @@ public class SQLDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         createUserTable(db);
+        createProductTable(db);
     }
 
 
@@ -26,6 +27,7 @@ public class SQLDBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+DATABASE_NAME);
         onCreate(db);
+        createProductTable(db);
     }
 
 
@@ -39,6 +41,15 @@ public class SQLDBHelper extends SQLiteOpenHelper {
                 "email VARCHAR(50));");
     }
 
+    private void createProductTable(SQLiteDatabase db) {
+
+        db.execSQL("CREATE TABLE PRODUCT " +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "uuid VARCHAR(50)," +
+                "title VARCHAR(50)," +
+                "barcode VARCHAR(50)," +
+                "price VARCHAR(50));");
+    }
 
 
 }

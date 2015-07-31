@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@color/app_background_color">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/product1"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/app_default_border_style"/>
+
+    <LinearLayout
+        android:id="@+id/llFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgProduct"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/txtProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_primary_text_color"
+            android:text="Product Name" />
+
+        <TextView
+            android:id="@+id/txtCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_divider_color"
+            android:text="Company Name"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_note_text"
+            android:textColor="@color/app_accent_color"
+            android:text="@string/Rs"
+            android:singleLine="true"
+
+
+            />
+        <RatingBar android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="2.0"
+            style="?android:attr/ratingBarStyleSmall"
+            android:paddingBottom="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llsecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/llFirst"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_light_color"
+            android:background="@drawable/shopingbag"
+            android:gravity="center"
+            android:text="2" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

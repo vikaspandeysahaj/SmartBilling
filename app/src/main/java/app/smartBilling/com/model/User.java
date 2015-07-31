@@ -1,5 +1,7 @@
 package app.smartBilling.com.model;
 
+import java.util.UUID;
+
 /**
  * Created by vikas on 31/07/15.
  */
@@ -10,8 +12,15 @@ public class User {
     private String phoneNumber;
     private String email;
 
-    private User(String name, String phoneNumber, String email){
+    public User() {
 
+    }
+
+    public User(String name, String phoneNumber, String email){
+        this.uuid = UUID.randomUUID().toString();
+        this.phoneNumber = phoneNumber;
+        this.name = name;
+        this.email = email;
     }
     public String getUuid() {
         return uuid;

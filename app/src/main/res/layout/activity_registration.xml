@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_background_color"
+    android:id="@+id/scrollViewRegistration">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="150dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:paddingLeft="10dp"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/app_default_text"
+        android:background="@drawable/app_default_edittext_desgin"/>
+
+    <EditText
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/app_default_text"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@color/app_primary_text_color"
+        android:background="@drawable/app_default_edittext_desgin"/>
+
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/app_default_text"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/app_primary_text_color"
+        android:background="@drawable/app_default_edittext_desgin"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:height="50dp"
+        android:textSize="@dimen/app_default_text"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/app_background_color"
+        android:background="@drawable/app_default_button_design"/>
 
 </LinearLayout>
+
+</ScrollView>

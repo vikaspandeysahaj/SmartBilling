@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_title_big">36sp</dimen>
+    <dimen name="app_title_mid">31sp</dimen>
+    <dimen name="app_title_small">16sp</dimen>
+    <dimen name="app_header_text">31sp</dimen>
+    <dimen name="app_sub_header_text">22sp</dimen>
+    <dimen name="app_default_text">16sp</dimen>
+    <dimen name="app_button_text">16sp</dimen>
+    <dimen name="app_note_text">13sp</dimen>
+    <dimen name="app_action_bar_height">56sp</dimen>
+    <dimen name="app_time_stamp_text">11sp</dimen>
+
+
+</resources>
