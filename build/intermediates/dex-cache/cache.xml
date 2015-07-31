@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/usr/local/Cellar/gradle221/2.2.1/caches/modules-2/files-2.1/com.google.zxing/core/3.1.0/908e18674f895e3e1fa8f4a954b8c637a23d2801/core-3.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/pre-dexed/debug/core-3.1.0-9c25e079b42f055651a82a76a64ab78261163344.jar" />
+    </item>
+    <item
+        jar="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/pre-dexed/debug/classes-fe6ddefa61c3b5d1471f9969ea25157c8879f9f9.jar" />
+    </item>
+    <item
+        jar="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/pre-dexed/debug/classes-b5d38ff2b55c7badb83976667e6de6fa3d0125fd.jar" />
+    </item>
+    <item
+        jar="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-121611e769659e7900d388ecb5909010920434f5.jar" />
+    </item>
+    <item
+        jar="/Users/manisharana/Downloads/softwares/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-8a660deee224e48e8cf46d472066fa5b8872b063.jar" />
+    </item>
+    <item
+        jar="/usr/local/Cellar/gradle221/2.2.1/caches/modules-2/files-2.1/com.google.zxing/android-integration/3.1.0/52707c1c0801b4e1c0ca9bdbabd2dae20d8564d7/android-integration-3.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="52707c1c0801b4e1c0ca9bdbabd2dae20d8564d7">
+        <dex dex="/Users/manisharana/AndroidstudioProjects/SmartBilling/app/build/intermediates/pre-dexed/debug/android-integration-3.1.0-fff0a63a31ebea26d24a91d535a31cb52ddf5cd7.jar" />
+    </item>
+
+</items>
