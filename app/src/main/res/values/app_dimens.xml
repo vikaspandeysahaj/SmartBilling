@@ -4,7 +4,7 @@
     <dimen name="app_title_mid">31sp</dimen>
     <dimen name="app_title_small">16sp</dimen>
     <dimen name="app_header_text">31sp</dimen>
-    <dimen name="app_sub_header_text">22sp</dimen>
+    <dimen name="app_sub_header_text">19sp</dimen>
     <dimen name="app_default_text">16sp</dimen>
     <dimen name="app_button_text">16sp</dimen>
     <dimen name="app_note_text">13sp</dimen>

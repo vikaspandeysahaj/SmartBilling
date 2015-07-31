@@ -65,6 +65,26 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
         return null;
     }
 
+    @Override
+    public Product findProductByUUID(String productId) {
+        Product product = new Product();
+        String[] tableColumns = new String[] {"uuid","title","price"};
+        String whereClause = "uuid = ?";
+        String[] whereArgs = new String[] {productId};
+        Cursor cursor = db.query("PRODUCT", tableColumns, whereClause, whereArgs, null, null, null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            product.setUuid(cursor.getString(0));
+            product.setTitle(cursor.getString(1));
+            product.setPrice(cursor.getString(2));
+            cursor.moveToNext();
+        }
+        if(product.getUuid()!=null) {
+            return product;
+        }
+        return null;
+    }
+
 
     private ContentValues getContentValues(Product product){
         ContentValues contentValues = new ContentValues();

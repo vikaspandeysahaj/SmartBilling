@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_background_color">
+    android:background="@color/app_background_color"
+    android:id="@+id/linearViewProductList">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_default_edittext_desgin">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_search_category_default"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:textColor="@color/app_primary_text_color"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_default_edittext_desgin"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="3dp"
+                android:text="Total"
+                android:textColor="@color/app_primary_text_color"/>
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="3dp"
+                android:text="@string/Rs"
+                android:textColor="@color/app_accent_color"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/app_divider" />
     <ListView
         android:id="@+id/productListView"
         android:layout_width="match_parent"
@@ -13,15 +72,4 @@
         android:divider="@color/app_divider_color"
         android:dividerHeight="0.1dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/app_accent_color"
-        android:layout_below="@+id/productListView">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Total"
-            android:textColor="@color/app_light_color"/>
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="app_dark_primary_color">#2A83D3</color>
-    <color name="app_primary_color">#2C89DC</color>
-    <color name="app_light_primary_color">#BBDEFB</color>
+
+    <color name="app_dark_primary_color">#8B0000</color>
+    <color name="app_primary_color">#cf8b0000</color>
+    <color name="app_light_primary_color">#748B0000</color>
     <color name="app_light_color">#FFFFFF</color>
     <color name="app_accent_color">#FE7250</color>
     <color name="app_primary_text_color">#212121</color>

@@ -15,41 +15,55 @@
     android:paddingRight="40dp">
 
 
-    <EditText
-        android:id="@+id/txtName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Full Name"
-        android:paddingLeft="10dp"
-        android:textColor="@color/app_primary_text_color"
-        android:textSize="@dimen/app_default_text"
-        android:background="@drawable/app_default_edittext_desgin"/>
+        android:background="@drawable/app_default_edittext_desgin">
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/app_default_text" />
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/txtPhoneNumber"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Mobile Number"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
-        android:textSize="@dimen/app_default_text"
-        android:inputType="phone"
-        android:maxLength="10"
-        android:textColor="@color/app_primary_text_color"
-        android:background="@drawable/app_default_edittext_desgin"/>
+        android:background="@drawable/app_default_edittext_desgin">
+        <EditText
+            android:id="@+id/txtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/app_default_text"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_primary_text_color" />
+    </LinearLayout>
 
 
-    <EditText
-        android:id="@+id/txtEmail"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:paddingLeft="10dp"
-        android:textSize="@dimen/app_default_text"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/app_primary_text_color"
-        android:background="@drawable/app_default_edittext_desgin"/>
-
+        android:background="@drawable/app_default_edittext_desgin">
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/app_default_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/app_primary_text_color" />
+    </LinearLayout>
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"

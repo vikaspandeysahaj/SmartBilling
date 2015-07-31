@@ -13,6 +13,5 @@ public interface ProductDao {
     void save(Product product);
     List<Product> getAll();
     Product findProductByBarCode(String barcode);
-
-
+    Product findProductByUUID(String productId);
 }

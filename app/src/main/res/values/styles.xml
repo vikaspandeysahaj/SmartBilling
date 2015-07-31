@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="appTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/app_actionBarStyle</item>
+    </style>
 
+    <style name="app_actionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/app_dark_primary_color</item>
+        <item name="android:titleTextStyle">@style/appTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:height">@dimen/app_action_bar_height</item>
+    </style>
+
+    <style name="appTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/app_light_color</item>
+        <item name="android:textSize">@dimen/app_sub_header_text</item>
+    </style>
+
+    <style name="app_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/app_divider_color</item>
+    </style>
 
 </resources>

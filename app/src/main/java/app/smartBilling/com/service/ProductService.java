@@ -31,4 +31,8 @@ public class ProductService {
             productDao.save(product2);
         }
     }
+
+    public Product getProductByUUID(String productId) {
+        return productDao.findProductByUUID(productId);
+    }
 }

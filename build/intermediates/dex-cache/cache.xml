@@ -2,27 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-565735bd15f1e11f071be3a3bed1a64d9e912b84.jar" />
-    </item>
-    <item
-        jar="/Users/vikas/.gradle/caches/modules-2/files-2.1/com.google.zxing/android-integration/3.1.0/52707c1c0801b4e1c0ca9bdbabd2dae20d8564d7/android-integration-3.1.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="52707c1c0801b4e1c0ca9bdbabd2dae20d8564d7">
-        <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/android-integration-3.1.0-cbdcb3c338fa3f1eab090a7e63820f250ed072c3.jar" />
-    </item>
-    <item
-        jar="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/classes-275a30d9aa5a0703c375cf60b431e73063be3ec3.jar" />
-    </item>
-    <item
         jar="/Users/vikas/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.1.0/908e18674f895e3e1fa8f4a954b8c637a23d2801/core-3.1.0.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -42,6 +21,27 @@
         revision="22.0.1"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
         <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-98d30f52b42428f60cc985f8d675475453c4d1b5.jar" />
+    </item>
+    <item
+        jar="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-565735bd15f1e11f071be3a3bed1a64d9e912b84.jar" />
+    </item>
+    <item
+        jar="/Users/vikas/.gradle/caches/modules-2/files-2.1/com.google.zxing/android-integration/3.1.0/52707c1c0801b4e1c0ca9bdbabd2dae20d8564d7/android-integration-3.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="52707c1c0801b4e1c0ca9bdbabd2dae20d8564d7">
+        <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/android-integration-3.1.0-cbdcb3c338fa3f1eab090a7e63820f250ed072c3.jar" />
+    </item>
+    <item
+        jar="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/vikas/Documents/hackathon/SmartBilling/app/build/intermediates/pre-dexed/debug/classes-275a30d9aa5a0703c375cf60b431e73063be3ec3.jar" />
     </item>
 
 </items>

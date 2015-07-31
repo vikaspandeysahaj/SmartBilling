@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view_Product_tile"
+    android:background="@drawable/app_default_border_style">
+
+    <RelativeLayout
+        android:id="@+id/linearViewProductMessage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/product1"
+            android:id="@+id/imgProductMessage"
+            android:layout_centerInParent="true"
+            />
+        <ImageButton
+            android:id="@+id/imageButtonClose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearViewProductMessage"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/app_primary_color">
+
+
+        <TextView
+            android:id="@+id/txtProductMessageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wilson Sport Tennis Racket"
+            android:textColor="@color/app_light_color"
+            android:paddingTop="20dp"
+            android:textSize="@dimen/app_default_text"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarProductMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="2.0"
+            android:layout_marginTop="10dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_below="@+id/txtProductMessageTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBarProductMessage"
+            android:id="@+id/txtProductMessageMrp"
+            android:text="@string/Rs"
+            android:paddingTop="10dp"
+            android:textColor="@color/app_light_color"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/app_default_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBarProductMessage"
+            android:layout_toRightOf="@+id/txtProductMessageMrp"
+            android:id="@+id/txtProductMessagePrice"
+            android:text="@string/Rs"
+            android:textColor="@color/app_light_color"
+            android:textSize="@dimen/app_sub_header_text"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearViewAddRemove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtProductMessagePrice">
+
+            <ImageButton
+                android:id="@+id/btnRemoveOneMore"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/remove"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProductQuantity"
+                android:text="4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/app_light_color"
+                android:textSize="@dimen/app_header_text"
+                android:layout_marginTop="5dp"/>
+
+            <ImageButton
+                android:id="@+id/btnAddOneMore"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/add"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@+id/linearViewAddRemove"
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add"
+            android:height="50dp"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/app_default_text"
+            android:textColor="@color/app_background_color"
+            android:background="@drawable/app_default_button_design"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -25,4 +25,8 @@ public class ProductController {
     public void CreateTempProducts(){
         productService.CreateTempProducts();
     }
+
+    public Product getProductByUUID(String productId) {
+        return productService.getProductByUUID(productId);
+    }
 }
