@@ -12,6 +12,7 @@ import app.smartBilling.com.R;
 import app.smartBilling.com.SmartBillingApplication;
 import app.smartBilling.com.controller.ProductController;
 import app.smartBilling.com.model.Product;
+import app.smartBilling.com.model.ScannedProduct;
 
 /**
  * Created by vikas on 01/08/15.
@@ -20,7 +21,7 @@ public class ProductDetailsActivity extends Activity {
 
     private SmartBillingApplication application;
     private ProductController productController;
-    private Product product;
+    private ScannedProduct product;
     private TextView txtProductTitle ;
     private TextView txtMrp;
     private TextView txtPrice;
@@ -38,11 +39,12 @@ public class ProductDetailsActivity extends Activity {
     }
 
     private void setProduct() {
-        product = productController.getProductByUUID(getIntent().getStringExtra("productId"));
-        txtProductTitle.setText(product.getTitle());
-        txtMrp.setText(getApplicationContext().getResources().getString(R.string.Rs) + product.getPrice());
+        Product p = productController.getProductByUUID(getIntent().getStringExtra("productId"));
+        product = new ScannedProduct(p,1);
+        txtProductTitle.setText(product.getProduct().getTitle());
+        txtMrp.setText(getApplicationContext().getResources().getString(R.string.Rs) + product.getProduct().getPrice());
         txtMrp.setPaintFlags(txtMrp.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-        txtPrice.setText(getApplicationContext().getResources().getString(R.string.Rs) + product.getPrice());
+        txtPrice.setText(getApplicationContext().getResources().getString(R.string.Rs) + product.getProduct().getPrice());
         txtQuantity.setText("1");
 
         btnAddOneMore = (ImageButton)findViewById(R.id.btnAddOneMore);
@@ -87,6 +89,7 @@ public class ProductDetailsActivity extends Activity {
             @Override
             public void onClick(View view) {
 
+                product.setQuantity(Integer.parseInt(txtQuantity.getText().toString()));
                 SmartBillingApplication.productList.add(product);
                 finish();
             }

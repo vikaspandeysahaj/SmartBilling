@@ -23,9 +23,12 @@ public class ProductService {
     public void CreateTempProducts() {
 
         if(productDao.findProductByBarCode("1234567890")==null) {
-            Product product = new Product("Product 1", "1234567890", "4000", "abc");
-            Product product1 = new Product("Product 2", "39123439", "4000", "xyz");
-            Product product2 = new Product("Product 3", "640509040147", "4000", "asdf");
+
+            Product product = new Product("Product 1", "1234567890", "4000", "abc", "6000");
+            Product product1 = new Product("Product 2", "39123439", "4000", "xyz", "6000");
+            Product product2 = new Product("Product 3", "640509040147", "4000", "asdf", "6000");
+
+
             productDao.save(product);
             productDao.save(product1);
             productDao.save(product2);

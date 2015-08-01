@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/app_light_color">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_default_edittext_desgin"
+        android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="3dp"
+                android:text="Total"
+                android:textColor="@color/app_primary_text_color"/>
+
+            <TextView
+                android:id="@+id/txtBillingTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="3dp"
+                android:text="@string/Rs"
+                android:textColor="@color/app_accent_color"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT"
+            android:paddingLeft="10dp"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/app_default_text"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:paddingLeft="20dp"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/app_default_text"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+            android:paddingLeft="20dp"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/app_default_text"/>
+    </LinearLayout>
+
+    <View style="@style/app_divider" />
+
+    <ListView
+        android:id="@+id/listViewBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+
+</LinearLayout>

@@ -11,15 +11,17 @@ public class Product {
     private String barcode;
     private String price;
     private String company;
+    private String mrp;
 
     public Product(){ }
 
-    public Product(String title, String barcode, String price, String company){
+    public Product(String title, String barcode, String price, String company, String mrp){
         this.uuid = UUID.randomUUID().toString();
         this.title = title;
         this.barcode = barcode;
         this.price = price;
-        this.setCompany(company);
+        this.setMrp(mrp);
+        this.company =company;
     }
 
     public String getUuid() {
@@ -61,5 +63,13 @@ public class Product {
 
     public void setCompany(String company) {
         this.company = company;
+    }
+
+    public String getMrp() {
+        return mrp;
+    }
+
+    public void setMrp(String mrp) {
+        this.mrp = mrp;
     }
 }

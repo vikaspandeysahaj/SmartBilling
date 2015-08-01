@@ -9,6 +9,7 @@ import app.smartBilling.com.controller.AuthController;
 import app.smartBilling.com.controller.ProductController;
 import app.smartBilling.com.controller.RegistrationController;
 import app.smartBilling.com.model.Product;
+import app.smartBilling.com.model.ScannedProduct;
 import app.smartBilling.com.model.User;
 
 /**
@@ -16,7 +17,7 @@ import app.smartBilling.com.model.User;
  */
 public class SmartBillingApplication extends Application {
 
-    public static List<Product> productList = new ArrayList<Product>();
+    public static List<ScannedProduct> productList = new ArrayList<ScannedProduct>();
     private RegistrationController registrationController;
     private AuthController authController;
     private ProductController productController;

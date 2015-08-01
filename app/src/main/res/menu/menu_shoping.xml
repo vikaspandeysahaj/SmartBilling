@@ -4,4 +4,8 @@
         android:title="New Chat"
         android:icon="@drawable/shoppingcart"
         />
+    <item android:id="@+id/btnBillGeneration"
+        android:title="Product Bill"
+        android:icon="@drawable/billing"
+        />
 </menu>

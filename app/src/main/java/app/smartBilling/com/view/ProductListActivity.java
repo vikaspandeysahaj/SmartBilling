@@ -73,10 +73,11 @@ public class ProductListActivity  extends Activity {
 
     public void setTotalPrice(){
         double total = 0;
-        for (Product product : SmartBillingApplication.productList){
-            total = total+Double.parseDouble(product.getPrice());
+        for (int i = 0; i< SmartBillingApplication.productList.size();++i){
+            total = total+Double.parseDouble(SmartBillingApplication.productList.get(i).getProduct().getPrice());
         }
-        textViewTotal.setText(getApplicationContext().getResources().getString(R.string.Rs)+String.valueOf(total));
+
+        textViewTotal.setText(getApplicationContext().getResources().getString(R.string.Rs) + String.valueOf(total));
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
@@ -113,6 +114,10 @@ public class ProductListActivity  extends Activity {
         MenuItem settings = menu.findItem(R.id.btnNewConversation);
         settings.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
+        MenuItem setting = menu.findItem(R.id.btnBillGeneration);
+        setting.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
+
         return true;
     }
 
@@ -122,9 +127,17 @@ public class ProductListActivity  extends Activity {
             case R.id.btnNewConversation:
                 startScanningProduct();
                 return true;
+            case R.id.btnBillGeneration:
+                startBillingProduct();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void startBillingProduct() {
+        Intent intent = new Intent(this, ProductBillingActivity.class);
+        startActivity(intent);
     }
 
 }

@@ -51,8 +51,6 @@
             android:textColor="@color/app_accent_color"
             android:text="@string/Rs"
             android:singleLine="true"
-
-
             />
         <RatingBar android:id="@+id/ratingbar"
             android:layout_width="wrap_content"

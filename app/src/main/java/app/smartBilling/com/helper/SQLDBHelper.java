@@ -48,6 +48,8 @@ public class SQLDBHelper extends SQLiteOpenHelper {
                 "uuid VARCHAR(50)," +
                 "title VARCHAR(50)," +
                 "barcode VARCHAR(50)," +
+                "company VARCHAR(50)," +
+                "mrp VARCHAR(50)," +
                 "price VARCHAR(50));");
     }
 

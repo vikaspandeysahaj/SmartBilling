@@ -28,7 +28,7 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
     @Override
     public List<Product> getAll() {
         List<Product> products = new ArrayList<Product>();
-        String[] tableColumns = new String[] {"uuid","title","barcode","price"};
+        String[] tableColumns = new String[] {"uuid","title","barcode","price","mrp","company"};
         Cursor cursor = db.query("PRODUCT", tableColumns, null, null, null, null, null);
         cursor.moveToFirst();
 
@@ -38,6 +38,8 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
             product.setTitle(cursor.getString(1));
             product.setBarcode(cursor.getString(2));
             product.setPrice(cursor.getString(3));
+            product.setMrp(cursor.getString(4));
+            product.setCompany(cursor.getString(5));
             products.add(product);
             cursor.moveToNext();
         }
@@ -48,7 +50,7 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
     @Override
     public Product findProductByBarCode(String barcode) {
         Product product = new Product();
-        String[] tableColumns = new String[] {"uuid","title","price"};
+        String[] tableColumns = new String[] {"uuid","title","price","mrp","company"};
         String whereClause = "barcode = ?";
         String[] whereArgs = new String[] {barcode};
         Cursor cursor = db.query("PRODUCT", tableColumns, whereClause, whereArgs, null, null, null);
@@ -57,6 +59,8 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
             product.setUuid(cursor.getString(0));
             product.setTitle(cursor.getString(1));
             product.setPrice(cursor.getString(2));
+            product.setMrp(cursor.getString(3));
+            product.setCompany(cursor.getString(4));
             cursor.moveToNext();
         }
         if(product.getUuid()!=null) {
@@ -68,7 +72,7 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
     @Override
     public Product findProductByUUID(String productId) {
         Product product = new Product();
-        String[] tableColumns = new String[] {"uuid","title","price"};
+        String[] tableColumns = new String[] {"uuid","title","price","mrp","company"};
         String whereClause = "uuid = ?";
         String[] whereArgs = new String[] {productId};
         Cursor cursor = db.query("PRODUCT", tableColumns, whereClause, whereArgs, null, null, null);
@@ -77,6 +81,8 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
             product.setUuid(cursor.getString(0));
             product.setTitle(cursor.getString(1));
             product.setPrice(cursor.getString(2));
+            product.setMrp(cursor.getString(3));
+            product.setCompany(cursor.getString(4));
             cursor.moveToNext();
         }
         if(product.getUuid()!=null) {
@@ -92,6 +98,8 @@ public class ProductDaoImpl extends SQLDaoHelper implements ProductDao {
         contentValues.put("title", product.getTitle());
         contentValues.put("barcode", product.getBarcode());
         contentValues.put("price", product.getPrice());
+        contentValues.put("mrp", product.getMrp());
+        contentValues.put("company", product.getCompany());
         return contentValues;
     }
 }

@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,15 +15,14 @@ import app.smartBilling.com.model.Product;
 import app.smartBilling.com.model.ScannedProduct;
 
 /**
- * Created by vikas on 31/07/15.
+ * Created by vikas on 01/08/15.
  */
-public class ProductListAdapter extends BaseAdapter {
-
+public class BillingListAdapter extends BaseAdapter {
     private Context context;
     private List<ScannedProduct> products = new ArrayList<ScannedProduct>();
     private static LayoutInflater inflater=null;
 
-    public ProductListAdapter(Context context, List<ScannedProduct> productList) {
+    public BillingListAdapter(Context context, List<ScannedProduct> productList) {
         this.context = context;
         this.products = productList;
         inflater = LayoutInflater.from(context);
@@ -52,19 +49,17 @@ public class ProductListAdapter extends BaseAdapter {
         View view = convertView;
 
         if (convertView == null) {
-            view = inflater.inflate(R.layout.view_product_list, parent, false);
+            view = inflater.inflate(R.layout.view_billing_list, parent, false);
         }
-        TextView txtProduct = (TextView)view.findViewById(R.id.txtProduct);
-        TextView txtCompany = (TextView)view.findViewById(R.id.txtCompany);
-        TextView txtPrice = (TextView)view.findViewById(R.id.txtPrice);
-        TextView txtQuantity = (TextView)view.findViewById(R.id.txtQuantity);
+        TextView txtProduct = (TextView)view.findViewById(R.id.txtBillingProductTitle);
+        TextView txtQuantity = (TextView)view.findViewById(R.id.txtBillingProductQuantity);
+        TextView txtPrice = (TextView)view.findViewById(R.id.txtBillingProductPrice);
 
         Product product = products.get(i).getProduct();
 
         txtProduct.setText(product.getTitle());
-        txtCompany.setText(product.getCompany());
-        txtPrice.setText(context.getResources().getString(R.string.Rs) +" "+product.getPrice());
-        txtQuantity.setText(String.valueOf(products.get(i).getQuantity()));
+        txtPrice.setText(context.getResources().getString(R.string.Rs)  +" " +product.getPrice());
+        txtQuantity.setText( String.valueOf(products.get(i).getQuantity()));
 
         return view;
     }
